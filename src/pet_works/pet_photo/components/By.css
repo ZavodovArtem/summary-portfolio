@@ -1,0 +1,10 @@
+.by {
+    display: flex;
+    justify-content: right;
+    width: 1024px;
+    margin: auto;
+}
+.by-p{
+    font-family: 'Kaisei Opti', serif;
+    font-size: 16px;
+}

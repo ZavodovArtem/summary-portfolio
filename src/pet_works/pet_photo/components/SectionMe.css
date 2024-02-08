@@ -1,0 +1,31 @@
+.me {
+    display: flex;
+    justify-content: space-between;
+    /* height: 200px; */
+    align-items: center;
+
+
+    margin-top: 100px;
+    width: 1024px;
+    margin: auto;
+}
+.photoBody{
+    background-color: #FFFACD;
+    font-family: 'Kaisei Opti', serif;
+    z-index: -1;
+    width: 100vw;
+  }
+
+.me-photo {
+    width: 597px;
+    height: 896px;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+.me-p {
+    font-size: 24px;
+    font-family: 'Kaisei Opti', serif;
+    margin-bottom: -10px;
+}

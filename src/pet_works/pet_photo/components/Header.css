@@ -1,0 +1,48 @@
+.header {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    align-items: end;
+    z-index: 1;
+    width: 1024px;
+    margin: auto;
+}
+.header-h1{
+    margin-top: 100px;
+    margin-right: 20px;
+    font-family: 'Kaisei Opti', serif;
+    font-size: 36px;
+
+    
+}
+.header-line {
+    margin-top: -10px;
+}
+
+.namePhoto {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    width: 1024px;
+    margin: auto;
+}
+.name-img {
+    margin-left: -10px;
+}
+.name-abba {
+    margin-bottom: -10px;
+    font-family: 'Kaisei Opti', serif;
+    font-size: 16px;
+}
+.name-photograph {
+    font-size: 32px;
+    font-family: 'Kaisei Opti', serif;
+}
+.name-city {
+    font-family: 'Kaisei Opti', serif;
+    font-size: 16px;
+}

@@ -1,0 +1,35 @@
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    width: 1024px;
+    margin: auto;
+}
+
+
+.oneText {
+    position: absolute;
+    /* margin-top: 50px; */
+    width: 400px;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-family: 'Kaisei Opti', serif;
+    
+}
+
+.twoText{
+    position: absolute;
+    /* margin-top: 50px; */
+    margin-left: 1000px;
+    width: 400px;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-family: 'Kaisei Opti', serif;
+}
+
+.description-two{
+    display: flex;
+    justify-content: space-between;
+    /* height: 200px; */
+    margin-top: 200px;
+}

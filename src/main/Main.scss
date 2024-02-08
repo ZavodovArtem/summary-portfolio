@@ -1,0 +1,140 @@
+.resumeMain{
+    height: 1800px;
+    background: linear-gradient(to bottom, #0338F4, #E025CE);
+    .resumeMainSides{
+        width: 1024px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .sideLeft{
+            width: 500px;
+            height: 1500px;
+            background-color: rgb(196, 196, 196, 30%);
+            border-radius: 10px;
+            
+            .sideLeftOne{
+                display: flex;
+                justify-content: space-between;
+                margin: 20px;
+                align-items: center;
+
+                .sideLeftOnePh{
+                    width: 130px;
+                    height: 100px;
+                    border-radius: 30px;
+                }
+
+                .SideLeftOneTextgroup{
+                    margin-right: 130px;
+                    .sideLeftOneName{
+                        color: #CECACA;
+                        font-size: 18px;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .sideLeftOneSName{
+                        color: #FFFFFF;
+                        font-size: 20px;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+            }
+
+            .sideLeftTwo{
+                width: 350px;
+                height: 50px;
+                background-color: rgb(196, 196, 196, 30%);
+                border-radius: 10px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                .sideLeftTwoSvg{
+                    margin-left: 20px;
+                }
+                .sideLeftTwoMail{
+                    color: #FFFFFF;
+                    margin: 0 auto;
+                }
+            }
+            .sideLeftThree{
+                width: 350px;
+                background-color: rgb(196, 196, 196, 30%);
+                border-radius: 10px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                .sideLeftThreeMail{
+                    color: #FFFFFF;
+                    text-align: left;
+                    margin-left: 30px;
+                }
+            }
+            .sideLeftFour{
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+
+            
+
+        }
+        .sideRight{
+            width: 500px;
+            height: 1500px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            .sideRightOneTitle{
+                display: flex;
+                align-items: center;
+                margin:  0 auto;
+                margin-top: 50px;
+                width: 450px;
+            }
+            .work{
+                width: 400px;
+                font-weight: 700;
+                font-size: 15px;
+                margin-bottom: 20px;
+                margin: 0 auto;
+                border-bottom: 2px solid #545454;
+                .special{
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin-bottom: -5px;
+                }
+                .timeWork{
+                    font-size: 11px;
+                    font-weight: 100;
+                    margin-bottom: -15px;
+                }
+            }
+            .edu{
+                width: 400px;
+                margin: 0 auto;
+                .eduOne{
+                    font-weight: 700;
+                    font-size: 15px;
+                }
+                .eduTwo{
+                    font-size: 11px;
+                    font-weight: 100;
+                    border-bottom: 2px solid #545454;
+
+                }
+            }
+            .sideRightTwo{
+                width: 400px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto; 
+                margin-top: 50px;
+            }
+        }
+    }
+
+
+
+}
+
