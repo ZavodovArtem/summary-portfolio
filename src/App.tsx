@@ -5,7 +5,7 @@ import Main from './main/Main';
 import Home from './pet_works/pet_weather/components/Home';
 import WeatherApi from './pet_works/pet_weather/components/Weather';
 import Photo from './pet_works/pet_photo/Photo';
-import Freader from './pet_works/pet_reader/FREADER/Freader';
+import Freader from './pet_works/pet_reader/Freader';
 
 function App() {
   return (
