@@ -1,0 +1,31 @@
+.isHovered{
+    position: relative;
+    .isHoveredOpen{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: 'white';
+        border: 5px solid #CECACA;
+        padding: 0;
+        .isHoveredOpengroup{
+            position:relative;
+            overflow:hidden;
+            .isHoveredOpenAOne{
+                color: #eee;
+                font-size:12px;
+                position:absolute;
+                top:0px;
+            }
+            .isHovereOpenATwo{
+                color:#eee;
+                font-size:12px;
+                position:absolute;
+                top:14px;
+            }
+            .isHovereOpenAthree{
+                position:relative;
+                // border: 2px solid;
+            }
+        }
+    }
+}
