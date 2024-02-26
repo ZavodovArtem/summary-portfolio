@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import '../Main.scss'
 import '../components/styles/Map.scss'
 
+
+
 const HoverComponent = () => {
     const [isHovered, setIsHovered] = useState(false);
 

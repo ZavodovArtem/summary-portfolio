@@ -1,0 +1,65 @@
+.Tab{
+  display: flex;
+    .TabButton{
+      display: flex;
+      flex-direction: column;
+      .TabButtonEvery{
+        padding: 1em 2em; /* Расстояние от текста до края */
+        color: #fff; /* Цвет текста */
+        border: none;
+        margin-top: 50px;
+        margin-left: 50px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        .TabButtonColumn{
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          .TabButtonCloude{
+            height: 90px;
+          }
+        }
+      }
+      .TabButtonOne{
+        background-color: #150905;
+        color: #D77E2A;
+        &:hover{
+          background-color: rgb(49, 29, 9);
+          color: #FFD8D8;
+        }
+      }
+      .TabButtonTwo{
+        background-color: rgb(84, 151, 252);
+        &:hover{
+          background-color: #FFDEAC;
+          color: chocolate;
+        }
+      }
+      .TabButtonThree{
+        background-color: #e9b67bf5;
+        color: #FFFACD;
+        &:hover{
+          background-color: #9c774df5;
+          color: #b4b4b4;
+        }
+      }
+      .TabButtonFour{
+        background-color: #419152;
+        &:hover{
+          background-color: yellow;
+          color: red;
+        }
+      }
+    }
+    .TabRender{
+      margin-left: 50px;
+      border-left: solid;
+      border-radius: 2px;
+      border-width: 3px;
+      border-color: rgb(151, 109, 219);
+      .TabRenderContent{
+        margin: 20px;
+      }
+    }
+}
