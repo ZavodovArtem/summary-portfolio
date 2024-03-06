@@ -1,0 +1,39 @@
+.slider_up{
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+    .slider_img{
+      border-radius: 10px;
+      margin: 20px;
+    }
+}
+
+.slider_down{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 600px;
+    .slider_clode{
+      height: 50px;
+        margin-top: -50px;
+    }
+    // Оставлено по поводу спорного решения по кнопкам
+    // .slider_div{
+    //   height: 100px;
+    //   .slider_clode{
+    //     height: 50px;
+    //     margin-top: -50px;
+    //   }
+    // }
+    // .slider_but{
+    //   height: 50px;
+    //   background-image: url('../../img/cloude.png');
+    //   background-size: cover;
+    //   border: none;
+    //   .cl{
+    //     height: 50px;
+    //   }
+    // }
+}

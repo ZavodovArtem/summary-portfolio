@@ -12,11 +12,11 @@ function VerticalTab () {
     const [activeTab, setActiveTab] = useState <number | null> (null)
 
     const handleTabClick = (index: number) => {
-        setActiveTab((prevActiveTab) => (index === prevActiveTab ? null : index));
+        setActiveTab(prevActiveTab => (index === prevActiveTab ? null : index));
     }
 
     const renderTabContent = (tabIndex: number, content: React.ReactNode) => {
-        return activeTab === tabIndex && <div>{content}</div>;
+        return activeTab === tabIndex ? content : null;
     }
 
     return(
@@ -28,9 +28,7 @@ function VerticalTab () {
                 <button className="TabButtonEvery + TabButtonFour" onClick={() => handleTabClick(3)}> <div className="TabButtonColumn"> Project "Reader" <img className="TabButtonCloude" src={reader} alt="#" /> </div></button>
             </div>
             <div className="TabRender">
-
-            {activeTab !== null && <div className="TabRerenderHide">sdsdsdfsfd</div>}
-
+                {activeTab === null ? <p>Выберите вкладку, чтобы просмотреть контент.</p> : null}
                 {renderTabContent(0, <div className="TabRenderContent">
                     <h2>Project "KomuCho"</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat tenetur enim nobis. 
@@ -40,7 +38,7 @@ function VerticalTab () {
                     </p>
                     <div>
                         {/* <MySlider /> Оставлено для возможного применения........ */}
-                        {/* <ImageSlider /> */}
+                        <ImageSlider />
                     </div>
 
 
