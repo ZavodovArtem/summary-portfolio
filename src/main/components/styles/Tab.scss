@@ -58,6 +58,16 @@
       border-radius: 2px;
       border-width: 3px;
       border-color: rgb(151, 109, 219);
+
+      .TabRerender{
+        font-size: 25px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 80px;
+        height: 600px;
+      }
+
       .TabRenderContent{
         margin: 20px;
       }

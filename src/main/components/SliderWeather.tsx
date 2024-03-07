@@ -5,7 +5,7 @@ import wea2 from '../img/weather2.png'
 import wea3 from '../img/weather3.png'
 import cloude from '../img/cloude.png'
 
-const ImageSlider = () => {
+const ImageSliderWeather = () => {
   const [images, setImages] = useState  ([
     wea1,
     wea2,
@@ -42,4 +42,4 @@ const ImageSlider = () => {
   );
 };
 
-export default ImageSlider;
+export default ImageSliderWeather;
