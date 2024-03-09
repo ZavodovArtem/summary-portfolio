@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import '../components/styles/Slider.scss'
+import '../styles/Slider.scss'
 // import wea1 from '../img/weather1.png'
 // import wea2 from '../img/weather2.png'
 // import wea3 from '../img/weather3.png'
-import cloude from '../img/cloude.png'
-import Cho1 from '../img/Komucho1.png'
-import Cho2 from '../img/komucho2.png'
+import cloude from '../../img/cloude.png'
+import Pho1 from '../../img/photo1.png'
+import Pho2 from '../../img/photo2.png'
 
-const ImageSliderKomuCho = () => {
+const ImageSliderPhoto = () => {
   const [images, setImages] = useState  ([
-    Cho1,
-    Cho2,
-]);
+    Pho1,
+    Pho2,
+  ]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -33,12 +33,12 @@ const ImageSliderKomuCho = () => {
         {/* <div className="slider_but" onClick={handlePrevious}><img className="cl" src={cloude} alt="" />Предыдущее</div> */}
         {/* <div className="slider_div" onClick={handlePrevious}><img className="slider_clode" src={cloude} alt="" /></div> */}
         {/* <button className="slider_but" onClick={handlePrevious}>Предыдущее</button> */}
+        {/* <button className="slider_but" onClick={handleNext}>Следующее</button> */}
         <img className="slider_clode" onClick={handlePrevious} src={cloude} alt="" />
         <img className="slider_clode" onClick={handleNext} src={cloude} alt="" />
-        {/* <button className="slider_but" onClick={handleNext}>Следующее</button> */}
     </div>
       </>
   );
 };
 
-export default ImageSliderKomuCho;
+export default ImageSliderPhoto;

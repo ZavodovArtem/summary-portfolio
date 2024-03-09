@@ -1,6 +1,7 @@
 import React from "react";
 import ResumeMainSides from "./components/ResumeMainSides-front";
 import ResumeMainProject from "./components/ResumeMainProject";
+import ResumeMainForm from "./components/ResumeMainForm";
 
 
 function Main() {
@@ -15,6 +16,7 @@ function Main() {
                 <a href="https://dzen.ru/?yredirect=true"> андекс</a> */}
                 <ResumeMainSides />
                 <ResumeMainProject />
+                <ResumeMainForm />
             </div>
         </>
     )

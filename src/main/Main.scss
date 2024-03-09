@@ -156,11 +156,20 @@
 
     .resumeProject{
         width: 500px;
-        height: 1700px;
+        height: 1000px;
         background-color: rgb(196, 196, 196, 30%);
         border-radius: 10px;
         width: 1024px;
         margin: auto; 
+        margin-top: 100px;
+    }
+    .resumeMainForm{
+        width: 500px;
+        height: 500px;
+        background-color: rgb(196, 196, 196, 30%);
+        border-radius: 10px;
+        width: 1024px;
+        margin: auto;
         margin-top: 100px;
     }
 }

@@ -17,9 +17,9 @@ import css from '../img/css3.svg'
 import js from '../img/javascript.svg'
 import figm from '../img/figma.svg'
 import ps from '../img/ps.svg'
-import EmailLink from "./email";
-import Tell from "./number";
-import HoverComponent from "./Map";
+import EmailLink from "./ResumeMainSides-front/email";
+import Tell from "./ResumeMainSides-front/number";
+import HoverComponent from "./ResumeMainSides-front/Map";
 
 // import  Url from "url";
 

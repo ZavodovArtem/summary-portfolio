@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import '../Main.scss'
-import '../components/styles/Map.scss'
+import '../../Main.scss'
+import '../styles/Map.scss'
 
 
 

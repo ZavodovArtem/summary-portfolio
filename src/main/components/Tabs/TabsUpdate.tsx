@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import '../components/styles/Tab.scss'
-import komuCho from '../img/logoKomuCho.svg'
-import cloude from '../img/cloude.png'
-import camera from '../img/logoCamera.png'
-import reader from '../img/logoFileReader.png'
+import '../styles/Tab.scss'
+import komuCho from '../../img/logoKomuCho.svg'
+import cloude from '../../img/cloude.png'
+import camera from '../../img/logoCamera.png'
+import reader from '../../img/logoFileReader.png'
 // import MySlider from "./Slide";
-import ImageSliderWeather from "./SliderWeather";
-import ImageSliderKomuCho from "./SliderKomuCho";
-import ImageSliderPhoto from "./SliderPhoto";
-import ImageSliderReader from "./SliderReader";
+import ImageSliderWeather from "../Sliders/SliderWeather";
+import ImageSliderKomuCho from "../Sliders/SliderKomuCho";
+import ImageSliderPhoto from "../Sliders/SliderPhoto";
+import ImageSliderReader from "../Sliders/SliderReader";
 
 function VerticalTab () {
 

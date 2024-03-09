@@ -1,5 +1,5 @@
 import React from "react";
-import '../Main.scss'
+import '../../Main.scss'
 
 const Tell: React.FC = () => {
     const phoneNumber = '+7 (987) 112-57-14';
@@ -16,5 +16,4 @@ const Tell: React.FC = () => {
         </div>
     )
 } 
-
 export default Tell

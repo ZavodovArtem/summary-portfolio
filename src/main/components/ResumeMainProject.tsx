@@ -1,7 +1,7 @@
 import React from "react";
 import '../Main.scss'
 // import VerticalTab from "./Tabs";
-import VerticalTab from "./TabsUpdate";
+import VerticalTab from "./Tabs/TabsUpdate";
 
 function ResumeMainProject () {
 

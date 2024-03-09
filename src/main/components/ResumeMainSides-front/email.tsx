@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Main.scss'
+import '../../Main.scss'
 
 
 const EmailLink: React.FC<{ email: string }> = ({ email }) => {
