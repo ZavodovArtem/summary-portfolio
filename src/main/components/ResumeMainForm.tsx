@@ -1,6 +1,7 @@
 import React from "react";
 import '../Main.scss'
-import ContactForm from "./Form/resumeForm";
+import ContactForm from "./Form/ResumeForm";
+
 
 
 function ResumeMainForm() {

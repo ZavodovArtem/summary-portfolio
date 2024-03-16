@@ -1,45 +1,47 @@
-import { FormEvent, useState } from "react";
-
-import axios from "axios";
+import React, { useState } from "react";
+import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const serviceID = "service_9hd0q8a";
+  const templateID = "template_3f1ns42";
+  const userID = "6AdNquKGXKq43vhSe";
 
-    const data = {
-      name,
-      email,
-      message,
-    };
-
-    axios.post("http://localhost:3000/api/contact", data)
-      .then((res) => {
-        console.log(res);
-        alert("Message sent successfully!");
-      })
-      .catch((err) => {
-        console.error(err);
-        alert("Error sending message!");
-      });
-  };
+  const onSubmit: SubmitHandler<FieldValues> = (data, event) => {
+    if (data && event) {
+      emailjs.sendForm(serviceID, templateID, event.target as HTMLFormElement, userID)
+        .then((res) => {
+          console.log(res);
+          setSuccessMessage("Message sent successfully!");
+        }, (err) => {
+          console.log(err);
+        });
+    }
+  }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-      <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} />
-
-      <label htmlFor="email">Email:</label>
-      <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-
-      <label htmlFor="message">Message:</label>
-      <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} />
-
-      <button type="submit">Send</button>
-    </form>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input type="text" className="form-control" {...register("name", { required: true })} />
+          {errors.name && <span className="error">This field is required</span>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input type="email" className="form-control" {...register("email", { required: true })} />
+          {errors.email && <span className="error">This field is required</span>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea className="form-control" {...register("message", { required: true })} />
+          {errors.message && <span className="error">This field is required</span>}
+        </div>
+        <button type="submit" className="btn btn-primary">Send</button>
+        {successMessage && <p className="success">{successMessage}</p>}
+      </form>
   );
 };
 
