@@ -66,10 +66,41 @@
         align-items: center;
         margin-left: 80px;
         height: 600px;
+        .TabRerenderQuestion{
+          height: 500px;
+          margin: 150px;
+        }
       }
 
       .TabRenderContent{
         margin: 20px;
+        display: flex;
+        flex-direction: column;
+        .TabRenderContentH{
+          color: yellow;
+          text-decoration: none;
+          font-size: 25px;
+          margin: auto;
+        }
+        .TabRenderContentP{
+          color: yellow;
+          font-size: 18px;
+        }
+
+        .TabRenderContentSlider{
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          .TabRenderA{
+            color: yellow;
+            display: flex;
+            margin-top: 50px;
+            margin: auto;
+            text-decoration: none;
+            font-size: 20px;
+          }
+        }
       }
+      
     }
 }

@@ -3,9 +3,11 @@ import '../styles/Slider.scss'
 // import wea1 from '../img/weather1.png'
 // import wea2 from '../img/weather2.png'
 // import wea3 from '../img/weather3.png'
-import cloude from '../../img/cloude.png'
+// import cloude from '../../img/cloude.png'
 import read1 from '../../img/reader1.png'
 import read2 from '../../img/reader2.png'
+import code1 from '../../img/code1.png'
+import code2 from '../../img/code2.png'
 
 const ImageSliderReader = () => {
   const [images, setImages] = useState  ([
@@ -34,8 +36,8 @@ const ImageSliderReader = () => {
         {/* <div className="slider_div" onClick={handlePrevious}><img className="slider_clode" src={cloude} alt="" /></div> */}
         {/* <button className="slider_but" onClick={handlePrevious}>Предыдущее</button> */}
         {/* <button className="slider_but" onClick={handleNext}>Следующее</button> */}
-        <img className="slider_clode" onClick={handlePrevious} src={cloude} alt="" />
-        <img className="slider_clode" onClick={handleNext} src={cloude} alt="" />
+        <img className="slider_clode" onClick={handlePrevious} src={code2} alt="" />
+        <img className="slider_clode" onClick={handleNext} src={code1} alt="" />
     </div>
       </>
   );

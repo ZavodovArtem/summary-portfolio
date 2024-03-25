@@ -45,10 +45,11 @@ function VerticalTab () {
                         5) Деплой кода. 
                         Пример ниже. (Возможно перейти на проект)
                     </p>
-
-                    <ImageSliderKomuCho />
-                    <a href="#">Project "KomuCho"</a>
-
+                    <div className="TabRenderContentSlider">
+                        {/* <MySlider /> Оставлено для возможного применения........ */}
+                        <ImageSliderKomuCho />
+                        {/* <a className="TabRenderA" href="#">Project "KomuCho"</a> */}
+                    </div>
 
                 </div>)}
                 {renderTabContent(1, <div className="TabRenderContent">
@@ -57,9 +58,9 @@ function VerticalTab () {
                         quia dicta hic autem. Eligendi sint beatae ipsum ullam placeat tenetur vero error, esse, 
                         itaque quibusdam aliquam ipsa.
                     </p>
-                        <div>
+                        {/* <div> */}
                             <ImageSlider />
-                        </div>
+                        {/* </div> */}
                 </div>)}
                 {renderTabContent(2, <div className="TabRenderContent">
                     <h2>Project "Photo"</h2>
@@ -73,19 +74,19 @@ function VerticalTab () {
                         <br/> 5) Деплой приложения
                         <br/>Пример ниже <br/>(возможно перейти на проект)
                     </p>
-                         <div>
+                         {/* <div> */}
                             <ImageSliderPhoto />
-                            <a href="#">Project "Photo"</a>
-                         </div>
+                            {/* <a href="#">Project "Photo"</a> */}
+                         {/* </div> */}
                 </div>)}
                 {renderTabContent(3, <div className="TabRenderContent">
                     <h2>Project "Reader"</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fuga aspernatur corporis eos, 
                         maiores quisquam dicta quae perspiciatis ratione odit sequi dolore inventore nobis, 
                         ea, perferendis esse accusantium itaque voluptas.</p>
-                        <div>
+                        {/* <div> */}
                             <ImageSliderReader />
-                        </div>
+                        {/* </div> */}
                 </div>)}
             </div>
         </div>

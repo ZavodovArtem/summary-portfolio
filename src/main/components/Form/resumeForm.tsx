@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import emailjs from "emailjs-com";
+import '../styles/Form.scss'
 
 const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState("");
@@ -23,23 +24,23 @@ const ContactForm = () => {
   }
 
   return (
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className="form-main" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
-          <label htmlFor="name">Name</label>
+          <label className="form-group-label" htmlFor="name">What is your name?</label>
           <input type="text" className="form-control" {...register("name", { required: true })} />
           {errors.name && <span className="error">This field is required</span>}
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label className="form-group-label" htmlFor="email">Email</label>
           <input type="email" className="form-control" {...register("email", { required: true })} />
           {errors.email && <span className="error">This field is required</span>}
         </div>
         <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea className="form-control" {...register("message", { required: true })} />
+          <label className="form-group-label" htmlFor="message">Message</label>
+          <textarea className="form-control + form-control-message" {...register("message", { required: true })} />
           {errors.message && <span className="error">This field is required</span>}
         </div>
-        <button type="submit" className="btn btn-primary">Send</button>
+        <button type="submit" className="form-btn"><p className="form-btn-p">Send</p></button>
         {successMessage && <p className="success">{successMessage}</p>}
       </form>
   );

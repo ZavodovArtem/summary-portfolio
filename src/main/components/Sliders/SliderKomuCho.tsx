@@ -3,9 +3,12 @@ import '../styles/Slider.scss'
 // import wea1 from '../img/weather1.png'
 // import wea2 from '../img/weather2.png'
 // import wea3 from '../img/weather3.png'
-import cloude from '../../img/cloude.png'
+// import cloude from '../../img/cloude.png'
 import Cho1 from '../../img/Komucho1.png'
 import Cho2 from '../../img/komucho2.png'
+import shawurma from '../../img/shaurma.png'
+import coctail from '../../img/coctail.png'
+
 
 const ImageSliderKomuCho = () => {
   const [images, setImages] = useState  ([
@@ -34,8 +37,8 @@ const ImageSliderKomuCho = () => {
         {/* <div className="slider_div" onClick={handlePrevious}><img className="slider_clode" src={cloude} alt="" /></div> */}
         {/* <button className="slider_but" onClick={handlePrevious}>Предыдущее</button> */}
         {/* <button className="slider_but" onClick={handleNext}>Следующее</button> */}
-        <img className="slider_clode" onClick={handlePrevious} src={cloude} alt="" />
-        <img className="slider_clode" onClick={handleNext} src={cloude} alt="" />
+        <img className="slider_clode" onClick={handlePrevious} src={coctail} alt="" />
+        <img className="slider_clode" onClick={handleNext} src={shawurma} alt="" />
     </div>
       </>
   );
