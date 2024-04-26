@@ -24,18 +24,24 @@ const ImageSliderReader = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
 
+  const handleImageClick = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  const handleSliderClodeClick = (action: string) => {
+    if (action === "previous") {
+      handlePrevious();
+    } else if (action === "next") {
+      handleNext();
+    }
+  };
+
   return (
     <>
     <div className="slider_up">
-      <img className="slider_img" src={images[currentIndex]} alt="" />
+      <img className="slider_img" src={images[currentIndex]} alt="" onClick={handleNext}/>
     </div>
     <div className="slider_down">
-        {/* Оставлено по поводу спорного решения по кнопкам */}
-        {/* <button className="slider_but" onClick={handlePrevious}><img className="cl" src={cloude} alt="" />Предыдущее</button> */}
-        {/* <div className="slider_but" onClick={handlePrevious}><img className="cl" src={cloude} alt="" />Предыдущее</div> */}
-        {/* <div className="slider_div" onClick={handlePrevious}><img className="slider_clode" src={cloude} alt="" /></div> */}
-        {/* <button className="slider_but" onClick={handlePrevious}>Предыдущее</button> */}
-        {/* <button className="slider_but" onClick={handleNext}>Следующее</button> */}
         <img className="slider_clode" onClick={handlePrevious} src={code2} alt="" />
         <img className="slider_clode" onClick={handleNext} src={code1} alt="" />
     </div>

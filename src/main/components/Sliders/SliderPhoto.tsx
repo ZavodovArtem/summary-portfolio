@@ -10,37 +10,44 @@ import camera from '../../img/camera.png'
 import snimok from '../../img/photosnimok.png'
 
 const ImageSliderPhoto = () => {
-  const [images, setImages] = useState  ([
-    Pho1,
-    Pho2,
-  ]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+    const [images, setImages] = useState  ([
+      Pho1,
+      Pho2,
+    ]);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % images.length);
-  };
+    const handleNext = () => {
+      setCurrentIndex((currentIndex + 1) % images.length);
+    };
 
-  const handlePrevious = () => {
-    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
-  };
+    const handlePrevious = () => {
+      setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+    };
+    
+    const handleImageClick = (index: number) => {
+      setCurrentIndex(index);
+    };
+  
+    const handleSliderClodeClick = (action: string) => {
+      if (action === "previous") {
+        handlePrevious();
+      } else if (action === "next") {
+        handleNext();
+      }
+    };
 
-  return (
-    <>
-    <div className="slider_up">
-      <img className="slider_img" src={images[currentIndex]} alt="" />
-    </div>
-    <div className="slider_down">
-        {/* Оставлено по поводу спорного решения по кнопкам */}
-        {/* <button className="slider_but" onClick={handlePrevious}><img className="cl" src={cloude} alt="" />Предыдущее</button> */}
-        {/* <div className="slider_but" onClick={handlePrevious}><img className="cl" src={cloude} alt="" />Предыдущее</div> */}
-        {/* <div className="slider_div" onClick={handlePrevious}><img className="slider_clode" src={cloude} alt="" /></div> */}
-        {/* <button className="slider_but" onClick={handlePrevious}>Предыдущее</button> */}
-        {/* <button className="slider_but" onClick={handleNext}>Следующее</button> */}
-        <img className="slider_clode" onClick={handlePrevious} src={snimok} alt="" />
-        <img className="slider_clode" onClick={handleNext} src={camera} alt="" />
-    </div>
-      </>
-  );
+
+    return (
+      <>
+      <div className="slider_up">
+        <img className="slider_img" src={images[currentIndex]} alt="" onClick={handleNext} />
+      </div>
+      <div className="slider_down">
+          <img className="slider_clode" onClick={handlePrevious} src={snimok} alt="" />
+          <img className="slider_clode" onClick={handleNext} src={camera} alt="" />
+      </div>
+        </>
+    );
 };
 
 export default ImageSliderPhoto;

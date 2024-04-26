@@ -25,10 +25,23 @@ const ImageSliderKomuCho = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
 
+  const handleImageClick = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  const handleSliderClodeClick = (action: string) => {
+    if (action === "previous") {
+      handlePrevious();
+    } else if (action === "next") {
+      handleNext();
+    }
+  };
+
+
   return (
     <>
     <div className="slider_up">
-      <img className="slider_img" src={images[currentIndex]} alt="" />
+      <img className="slider_img" src={images[currentIndex]} alt="" onClick={handleNext} />
     </div>
     <div className="slider_down">
         {/* Оставлено по поводу спорного решения по кнопкам */}

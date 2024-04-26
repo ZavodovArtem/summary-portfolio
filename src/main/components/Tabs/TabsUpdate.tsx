@@ -10,6 +10,11 @@ import ImageSliderWeather from "../Sliders/SliderWeather";
 import ImageSliderKomuCho from "../Sliders/SliderKomuCho";
 import ImageSliderPhoto from "../Sliders/SliderPhoto";
 import ImageSliderReader from "../Sliders/SliderReader";
+// import SliderTest from "../Sliders/SlideTest";
+import ImageSliderKomuCho2 from '../Sliders/SliderKomuCho2'
+
+import ooooo from '../../img/komucho2.png'
+import ooo from '../../img/weather1.png'
 
 
 function VerticalTab () {
@@ -19,6 +24,9 @@ function VerticalTab () {
     const handleTabClick = (index: number) => {
         setActiveTab(prevActiveTab => (index === prevActiveTab ? null : index));
     }
+
+
+    
 
     const renderTabContent = (tabIndex: number, content: React.ReactNode) => {
         return activeTab === tabIndex ? content : null;
@@ -48,6 +56,8 @@ function VerticalTab () {
                     <div className="TabRenderContentSlider">
                         {/* <MySlider /> Оставлено для возможного применения........ */}
                         <ImageSliderKomuCho />
+                        {/* <SliderTest images={imagesKomuCho}/> */}
+                        {/* <ImageSliderKomuCho2 /> */}
                         <a className="TabRenderA" href="#" target="_blank">Project "KomuCho"</a>
                     </div>
 
